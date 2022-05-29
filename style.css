@@ -262,3 +262,25 @@
     border-top: 10px;
     border-color: #d2d2d7;
 }
+
+
+.foot3 {
+    display: grid;
+    border-bottom: 5px solid;
+    border-color: #d2d2d7;
+    color: #6e6e73;
+    list-style: none;
+    padding: 17px 0 11px 0;
+    margin-top: 30px;
+}
+
+.shopp1 {
+    color: #06c;
+    text-decoration: none;
+}
+
+.shopp1:hover {
+    text-decoration-line: underline;
+    text-underline-position: below;
+
+}
