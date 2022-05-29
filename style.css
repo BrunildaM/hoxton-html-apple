@@ -51,11 +51,20 @@
 }
 
 
-.se {
+.SE {
     display: grid;
     background-color: #fbfbfd;
     justify-self: center;
     place-content: center;
+}
+
+.text {
+    display: grid;
+    place-content: center;
+    justify-self: center;
+    background-color: #fbfbfd;
+    padding-top: 20px;
+
 }
 
 
@@ -74,7 +83,30 @@
     color: #424245;
 }
 
-.link :hover {
+.link:hover {
     text-decoration-line: underline;
+    text-underline-position: below;
 
+}
+
+
+.foot2 {
+    display: grid;
+    grid-template: 
+    'shop services store business values';
+    grid-column: span;
+    background-color: #f5f5f7;
+}
+
+.shop-list {
+    display: grid;
+    text-decoration: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+}
+
+.shop-list:hover{
+    text-decoration-line: underline;
+    text-underline-position: below;
 }
