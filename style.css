@@ -68,13 +68,23 @@
 }
 
 
+.footer {
+    display: grid;
+    background-color: #f5f5f7;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+
+}
+
+
 .foot1 {
     display: grid;
     border-bottom: 1px solid;
     border-color: #d2d2d7;
-    padding: 17px 0 11px 0;
     color: #6e6e73;
-    background-color: #f5f5f7;
+    list-style: none;
+    padding: 17px 0 11px 0;
     
 }
 
@@ -93,9 +103,11 @@
 .foot2 {
     display: grid;
     grid-template: 
-    'shop services store business values';
-    grid-column: span;
-    background-color: #f5f5f7;
+    'shop services store business values'
+    'shop services store education values'
+    'shop services store healthcare about'
+    'shop account store government about';
+
 }
 
 .shop-list {
@@ -104,9 +116,149 @@
     color: #6e6e73;
     border-top: 10px;
     border-color: #d2d2d7;
+    list-style: none;
 }
 
 .shop-list:hover{
     text-decoration-line: underline;
     text-underline-position: below;
+
+}
+
+.services-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+
+}
+
+.services-list:hover {
+    text-decoration-line: underline;
+    text-underline-position: below;
+
+}
+
+.account {
+    display: grid;
+    padding-top: 20px;
+}
+
+.account-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+
+}
+
+
+.account-list:hover {
+    text-decoration-line: underline;
+    text-underline-position: below;
+
+}
+
+.store-list{
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+}
+
+.store-list:hover {
+    text-decoration-line: underline;
+    text-underline-position: below;
+}
+
+
+.business-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+}
+
+
+.business-list:hover {
+    text-decoration-line: underline;
+    text-underline-position: below;
+}
+
+.education {
+    display: grid;
+    padding-top: 20px;
+}
+
+.education-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+}
+
+.healthcare {
+    display: grid;
+    padding-top: 20px;
+}
+
+.healthcare-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+}
+
+.government {
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+
+}
+
+.government-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+    
+
+}
+
+
+.values-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
+}
+
+.about {
+    padding-top: 20px;
+}
+
+.about-list {
+    display: grid;
+    list-style: none;
+    text-decoration-line: none;
+    color: #6e6e73;
+    border-top: 10px;
+    border-color: #d2d2d7;
 }
