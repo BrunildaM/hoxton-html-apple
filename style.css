@@ -5,19 +5,23 @@
   }
 
   body {
-      height: 100vh;
+      min-height: 100vh;
       display: grid;
+      grid-template:
+      'header' auto
+      'main-menu' 1fr
+      'footer' auto;
     
   }
 
   .header {
       display:grid;
       background-color: #1D1D1F;
-      font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
       position: relative;
       color: #f5f5f7;
-      height: 60px;
       padding: 10px 22px 10px 22px;
+      
+
       
 }
 
@@ -26,10 +30,8 @@
     display: grid;
     grid-auto-flow: column;
     width: auto;
-    height: 44px;
-    justify-content: space-between;
-    place-items: center;
-    margin: 0 -8px 0 -8px;
+    place-content: center;
+      gap: 1rem;
 }
 
 .Unicef {
@@ -44,18 +46,40 @@
 
 .iphonepro {
     display: grid;
-    place-content: center;
     background-color: #fbfbfd;
-
-
+    background-image: url(./Media/hero_iphone13pro.jpg);
+    background-size: 800px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: start;
+    gap: 0.5rem;
+  
 }
 
+.pro-text {
+    display: grid;
+    place-content: center;
+    justify-self: center;
+    list-style: none;
+    padding-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    
+}
 
 .SE {
     display: grid;
     background-color: #fbfbfd;
-    justify-self: center;
-    place-content: center;
+    background-image: url(./Media/hero_iphonese.jpg);
+    background-size: 800px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: start;
+    gap: 0.5rem;
 }
 
 .text {
