@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
 
   body {
@@ -15,23 +16,24 @@
   }
 
   .header {
-      display:grid;
       background-color: #1D1D1F;
-      position: relative;
-      color: #f5f5f7;
-      padding: 10px 22px 10px 22px;
-      
+      color: #f5f5f7;     
+ }
 
-      
-}
-
-.list {
-    list-style: none;
+ .list {
     display: grid;
     grid-auto-flow: column;
-    width: auto;
-    place-content: center;
-      gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+
+.list-item-link {
+    justify-self: center;
+    color: #f5f5f7;
 }
 
 .Unicef {
@@ -41,6 +43,9 @@
     font-size: 14px;
     text-align: center;
     background-color: #fbfbfd;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
 }
 
 
@@ -60,13 +65,31 @@
 
 .pro-text {
     display: grid;
-    place-content: center;
+    text-align: center;
     justify-self: center;
     list-style: none;
     padding-top: 30px;
     font-size: 1.8rem;
     font-weight: 500;
     
+}
+
+
+.pro-text-link-item {
+    display: grid;
+    grid-auto-flow: column;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.pro-text-link-item-more {
+    display: grid;
+    grid-auto-flow: column;
+    text-decoration: none;
+    color: #06c;
+    align-items: center;
 }
 
 .SE {
@@ -91,6 +114,108 @@
 
 }
 
+.tv {
+    display: grid;
+    background-image: url(./Media/hero_startframe__dbi4flqyio2u_medium\ \(1\).jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: start;
+    gap: 0.5rem;
+
+
+}
+
+.items {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+
+.wwdc {
+    display: grid;
+    grid-area: 1fr;
+    background-image: url(./Media/Apple-WWDC22-details-announcement-hero_big.jpg.large.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: end;
+    gap: 0.5rem;
+    color: white;
+    margin: 0.5rem;
+
+}
+
+.trade {
+    display: grid;
+    grid-area: 1fr;
+    background-image: url(./Media/promo_trade_in_may_2022__bbvnbfzoqzxu_large.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: end;
+    gap: 0.5rem;
+    color: white;
+    margin: 0.5rem;
+    align-content: start;
+    color: black;
+    place-items: center;
+}
+
+
+.iphone-promo {
+    display: grid;
+    grid-area: 1fr;
+    background-image: url(https://www.apple.com/v/home/ao/images/promos/iphone-13/promo_iphone13_avail__frc36u35m0ii_small.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: end;
+    gap: 0.5rem;
+    color: white;
+    margin: 0.5rem;
+    align-content: start;
+    color: black;
+    place-items: center;
+
+}
+
+
+.watch {
+    display: grid;
+    grid-area: 1fr;
+    background-image: url(https://www.apple.com/v/home/ao/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_small.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: end;
+    gap: 0.5rem;
+    color: white;
+    margin: 0.5rem;
+    align-content: start;
+    color: black;
+    place-items: center;
+
+}
+
+.card {
+    display: grid;
+    grid-area: 1fr;
+    background-image: url(https://www.apple.com/v/home/ao/images/promos/apple-card/tile__cauwwcyyn9hy_small.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: end;
+    gap: 0.5rem;
+    color: white;
+    margin: 0.5rem;
+    align-content: start;
+    color: black;
+    place-items: center;
+}
+
+
 
 .footer {
     display: grid;
@@ -100,6 +225,34 @@
     
 
 }
+
+.tv-promo {
+    display: grid;
+    grid-area: 1fr;
+    background-image: url(https://www.apple.com/v/home/ao/images/promos/tv-plus-now-and-then/promo_nat__f8py2o8h8v6m_small.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 1rem;
+    align-content: end;
+    gap: 0.5rem;
+    color: white;
+    margin: 0.5rem;
+    align-content: start;
+    color: black;
+    place-items: center;
+}
+
+
+
+.footer {
+    display: grid;
+    background-color: #f5f5f7;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+
+}
+
 
 
 .foot1 {
@@ -141,9 +294,14 @@
     border-top: 10px;
     border-color: #d2d2d7;
     list-style: none;
+    margin-right: 20px;
 }
 
-.shop-list:hover{
+.shop-list-item {
+    text-decoration: none;
+    color: #6e6e73;
+}
+.shop-list-item:hover{
     text-decoration-line: underline;
     text-underline-position: below;
 
@@ -154,12 +312,16 @@
     list-style: none;
     text-decoration-line: none;
     color: #6e6e73;
-    border-top: 10px;
-    border-color: #d2d2d7;
-
+    margin-right: 20px;
 }
 
-.services-list:hover {
+.services-list-item {
+    text-decoration: none;
+    color: #6e6e73;
+}
+
+
+.services-list-item:hover {
     text-decoration-line: underline;
     text-underline-position: below;
 
@@ -171,17 +333,20 @@
 }
 
 .account-list {
+    list-style: none;
+}
+
+.account-list-item {
     display: grid;
     list-style: none;
     text-decoration-line: none;
     color: #6e6e73;
-    border-top: 10px;
-    border-color: #d2d2d7;
+    margin-right: 20px;
 
 }
 
 
-.account-list:hover {
+.account-list-item:hover {
     text-decoration-line: underline;
     text-underline-position: below;
 
@@ -192,8 +357,7 @@
     list-style: none;
     text-decoration-line: none;
     color: #6e6e73;
-    border-top: 10px;
-    border-color: #d2d2d7;
+    margin-right: 20px;
 }
 
 .store-list:hover {
@@ -207,12 +371,17 @@
     list-style: none;
     text-decoration-line: none;
     color: #6e6e73;
-    border-top: 10px;
-    border-color: #d2d2d7;
+    margin-right: 20px;
+}
+
+.business-list-item {
+    list-style: none;
+    text-decoration: none;
+    color: #6e6e73;
 }
 
 
-.business-list:hover {
+.business-list-item :hover {
     text-decoration-line: underline;
     text-underline-position: below;
 }
@@ -220,6 +389,7 @@
 .education {
     display: grid;
     padding-top: 20px;
+    margin-right: 20px;
 }
 
 .education-list {
@@ -234,6 +404,7 @@
 .healthcare {
     display: grid;
     padding-top: 20px;
+    margin-right: 20px;
 }
 
 .healthcare-list {
@@ -249,7 +420,7 @@
     display: grid;
     padding-top: 20px;
     padding-bottom: 10px;
-    margin-right: 30px;
+    margin-right: 20px;
 
 }
 
@@ -276,6 +447,7 @@
 
 .about {
     padding-top: 20px;
+    margin-right: 20px;
 }
 
 .about-list {
